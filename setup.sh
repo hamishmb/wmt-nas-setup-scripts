@@ -13,7 +13,9 @@ echo "Creating home directory and config..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/setup-home.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 
 #---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
-. $HOME/.profile
+echo "$HOME" >> /mnt/HD/HD_a2/setup.log
+
+. /home/admin/.profile
 
 #---------- MAKE MOST TOOLS AVAILABLE IN /usr/local/bin AS WELL ----------
 ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/bin/ /usr/local/bin
