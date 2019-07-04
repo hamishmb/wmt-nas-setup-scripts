@@ -11,5 +11,4 @@ chmod 744 $HOME/.ssh/authorized_keys
 
 echo "Starting SSH server..."
 
-/mnt/HD/HD_a2/nas-sysroot/usr/local/sbin/sshd -p 2222 -f /mnt/HD/HD_a2/.ssh/ssh
-d_config
+/mnt/HD/HD_a2/nas-sysroot/usr/local/sbin/sshd -p 2222 -f /mnt/HD/HD_a2/.ssh/sshd_config

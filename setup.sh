@@ -19,14 +19,14 @@ ash /mnt/HD/HD_a2/scripts/setup-home.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/bin/ /usr/local/bin
 
 #---------- SSH SETUP ----------
-echo "Creating home directory and scripts..." >> /mnt/HD/HD_a2/setup.log
+echo "Setting up SSH..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/setup-ssh.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 
 #---------- GIT SETUP ----------
-echo "Creating home directory and scripts..." >> /mnt/HD/HD_a2/setup.log
-ash /mnt/HD/HD_a2/scripts/setup-ash.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
+echo "Setting up GIT..." >> /mnt/HD/HD_a2/setup.log
+ash /mnt/HD/HD_a2/scripts/setup-git.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 
 #---------- FILE SETUP ----------
-echo "Creating home directory and scripts..." >> /mnt/HD/HD_a2/setup.log
-ash /mnt/HD/HD_a2/scripts/setup-nano.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
+echo "Setting up file (the command)..." >> /mnt/HD/HD_a2/setup.log
+ash /mnt/HD/HD_a2/scripts/setup-file.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 
