@@ -1,0 +1,5 @@
+#!/bin/ash
+
+mkdir -p /usr/local/share/misc
+
+ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/share/misc/magic.mgc /usr/local/share/misc/magic.mgc
