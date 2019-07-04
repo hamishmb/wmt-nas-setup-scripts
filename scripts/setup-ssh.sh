@@ -1,4 +1,5 @@
 #!/bin/ash
+#FIXME: Currently not starting on boot for unknown reasons, but works when started manually after that.
 #FIXME: Password authentication is currently not working - key-based only.
 #NOTE: port 2222.
 #NOTE: This still works even after the parent has exited.
