@@ -1,4 +1,8 @@
 #!/bin/ash
+#NOTES:
+
+#1. Don't use "$HOME" in this script. It points to "/" at this stage of the boot process. Instead refer directly to "/home/admin"
+
 #Don't do anything if the setup script has already run.
 if [[ -e /home/admin ]]; then
     echo "Setup has already been run, nothing to do.";
@@ -13,8 +17,6 @@ echo "Creating home directory and config..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/setup-home.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 
 #---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
-echo "$HOME" >> /mnt/HD/HD_a2/setup.log
-
 . /home/admin/.profile
 
 #---------- MAKE MOST TOOLS AVAILABLE IN /usr/local/bin AS WELL ----------
