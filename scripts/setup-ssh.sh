@@ -1,8 +1,20 @@
 #!/bin/ash
 #FIXME: Currently not starting on boot for unknown reasons, but works when started manually after that.
 #FIXME: Password authentication is currently not working - key-based only.
+#FIXME: SSL certificates currently not working.
 #NOTE: port 2222.
 #NOTE: This still works even after the parent has exited.
+
+echo "Setting up SSL certificates..."
+
+rm -r /etc/ssl/certs
+rm -r /usr/local/ssl
+
+ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/ssl/certs /etc/ssl/certs
+ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/ssl/ /mnt/HD/HD_a2/nas-sysroot/usr/ssl
+ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/ssl/ /usr/ssl
+ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/ssl/ /usr/local/ssl
+ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/ssl/ /usr/lib/ssl
 
 echo "Making /home/admin/.ssh and setting up authorised keys..."
 
