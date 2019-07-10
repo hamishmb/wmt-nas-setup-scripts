@@ -16,10 +16,9 @@
 #---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
 . /home/admin/.profile
 
-#FIXME: Currently not starting on boot for unknown reasons, but works when started manually after that.
 #FIXME: Password authentication is currently not working - key-based only.
 #FIXME: SSL certificates currently not working.
-#NOTE: port 2222.
+#NOTE: port 22.
 #NOTE: This still works even after the parent has exited.
 
 echo "Setting up SSL certificates..."
