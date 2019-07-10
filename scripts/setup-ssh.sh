@@ -36,6 +36,12 @@ mkdir -p /home/admin/.ssh
 cp /mnt/HD/HD_a2/.ssh/authorized_keys /home/admin/.ssh
 chmod 744 /home/admin/.ssh/authorized_keys
 
+echo "Making SSH Tools available to SSHD..."
+
+ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/libexec/sftp-server /usr/local/libexec/sftp-server
+ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/libexec/ssh-keysign /usr/local/libexec/ssh-keysign
+ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/libexec/ssh-pkcs11-helper /usr/local/libexec/ssh-pkcs11-helper
+
 echo "Starting SSH server..."
 
-/mnt/HD/HD_a2/nas-sysroot/usr/local/sbin/sshd -p 2222 -f /mnt/HD/HD_a2/.ssh/sshd_config 2>&1 > /mnt/HD/HD_a2/scripts/ssh.log
+/mnt/HD/HD_a2/nas-sysroot/usr/local/sbin/sshd 2>&1 > /mnt/HD/HD_a2/scripts/ssh.log
