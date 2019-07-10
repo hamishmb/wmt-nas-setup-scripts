@@ -28,4 +28,4 @@ ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/libexec/git-core /usr/local/libexec/gi
 
 #FIXME SSL verification is not working, so disable it for the moment.
 echo "Disabling SSL verification (currently broken)..."
-git config --global http.sslVerify false
+ln -s /mnt/HD/HD_a2/.gitconfig /home/admin/.gitconfig
