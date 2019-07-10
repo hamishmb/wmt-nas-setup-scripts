@@ -13,6 +13,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+#---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
+. /home/admin/.profile
+
 #FIXME: Currently not starting on boot for unknown reasons, but works when started manually after that.
 #FIXME: Password authentication is currently not working - key-based only.
 #FIXME: SSL certificates currently not working.

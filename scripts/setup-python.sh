@@ -13,6 +13,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+#---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
+. /home/admin/.profile
+
 echo "Creating links from /mnt/HD/HD_a2/nas-sysroot/usr/local/lib/python3.7 to /usr/local/lib/python3.7 and /usr/lib/python3.7..."
 ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/lib/python3.7 /usr/local/lib/python3.7
 ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/lib/python3.7 /usr/lib/python3.7

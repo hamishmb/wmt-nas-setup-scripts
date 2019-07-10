@@ -13,6 +13,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+#---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
+. /home/admin/.profile
+
 echo "Deleting and Re-creating temporary directory..."
 
 rm -rv /mnt/HD/HD_a2/.temp
