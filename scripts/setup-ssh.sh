@@ -41,6 +41,7 @@ chmod 744 /home/admin/.ssh/authorized_keys
 
 echo "Making SSH Tools available to SSHD..."
 
+cp /mnt/HD/HD_a2/nas-sysroot/usr/local/etc /usr/local/etc
 ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/libexec/sftp-server /usr/local/libexec/sftp-server
 ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/libexec/ssh-keysign /usr/local/libexec/ssh-keysign
 ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/libexec/ssh-pkcs11-helper /usr/local/libexec/ssh-pkcs11-helper
