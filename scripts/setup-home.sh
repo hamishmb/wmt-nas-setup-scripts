@@ -37,7 +37,7 @@ EOF
 echo "Creating .profile..."
 
 cat << "EOF" > /home/admin/.profile
-if [ -f "$HOME/.bashrc" ]; then
-    . "$HOME/.bashrc"
+if [ -f "/home/admin/.bashrc" ]; then
+    . "/home/admin/.bashrc"
 fi
 EOF
