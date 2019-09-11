@@ -32,10 +32,10 @@ ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/ssl/ /usr/ssl
 ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/ssl/ /usr/local/ssl
 ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/ssl/ /usr/lib/ssl
 
-echo "Making /home/admin/.ssh and setting up authorised keys..."
+echo "Making /home/admin/.ssh and setting up SSH files..."
 
 mkdir -p /home/admin/.ssh
-cp /mnt/HD/HD_a2/.ssh/authorized_keys /home/admin/.ssh
+cp /mnt/HD/HD_a2/.ssh/* /home/admin/.ssh
 chmod 744 /home/admin/.ssh/authorized_keys
 
 echo "Making SSH Tools available to SSHD..."
