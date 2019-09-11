@@ -47,4 +47,4 @@ ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/libexec/ssh-pkcs11-helper /usr/local/l
 
 echo "Starting SSH server..."
 
-/mnt/HD/HD_a2/nas-sysroot/usr/local/sbin/sshd 2>&1 > /mnt/HD/HD_a2/scripts/ssh.log
+/mnt/HD/HD_a2/nas-sysroot/usr/local/sbin/sshd -f /home/admin/.ssh/sshd_config 2>&1 > /mnt/HD/HD_a2/scripts/ssh.log
