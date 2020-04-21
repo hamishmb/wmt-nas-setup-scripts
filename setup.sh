@@ -54,3 +54,7 @@ ash /mnt/HD/HD_a2/scripts/setup-python.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 echo "Setting up file (the command)..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/setup-file.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 
+#---------- SWAP SETUP ----------
+echo "Setting up swap file..." >> /mnt/HD/HD_a2/setup.log
+ash /mnt/HD/HD_a2/scripts/setup-swap.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
+
