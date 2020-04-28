@@ -46,6 +46,10 @@ ash /mnt/HD/HD_a2/scripts/setup-ssh.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 echo "Setting up GIT..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/setup-git.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 
+#---------- XINETD (TIME SERVER) SETUP ----------
+echo "Setting up xinted..." >> /mnt/HD/HD_a2/setup.log
+ash /mnt/HD/HD_a2/scripts/setup-xinetd.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
+
 #---------- PYTHON SETUP ----------
 echo "Setting up Python..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/setup-python.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
