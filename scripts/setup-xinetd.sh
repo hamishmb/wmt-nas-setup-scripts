@@ -17,7 +17,7 @@
 . /home/admin/.profile
 
 echo "Copying config file to /etc, and making link to xinetd..."
-cp -v /mnt/HD/HD_a2/cp nas-sysroot/etc/xinetd.conf /etc
+cp -v /mnt/HD/HD_a2/nas-sysroot/etc/xinetd.conf /etc
 
 echo "Starting xinetd..."
 xinetd
