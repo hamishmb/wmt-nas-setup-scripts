@@ -16,14 +16,5 @@
 #---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
 . /home/admin/.profile
 
-#If it doesn't exist, create a 2GB swap file.
-if [ ! -e /mnt/HD/HD_a2/swapfile.img ]; then
-    echo "Creating 2 GB swapfile. This may take a few minutes..."
-    dd if=/dev/zero of=/mnt/HD/HD_a2/swapfile.img bs=1M count=2000
-
-    echo "Formatting swapfile..."
-    mkswap /mnt/HD/HD_a2/swapfile.img
-fi
-
-echo "Enabling swapfile..."
-swapon /mnt/HD/HD_a2/swapfile.img
+echo "Creating symbolic link for engineer GUI..."
+ln -s /mnt/HD/HD_a2/engineer-gui /var/www/engineer-gui

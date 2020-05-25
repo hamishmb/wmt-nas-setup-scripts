@@ -1,6 +1,6 @@
 #!/bin/ash
 # NAS box setup scripts.
-# Copyright (C) 2017-2019 Wimborne Model Town
+# Copyright (C) 2019-2020 Wimborne Model Town
 # This program is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License version 3 or,
 # at your option, any later version.
@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#Version: 1.0~pre1
+#Version: 1.0~pre2
 
 #NOTES:
 
@@ -57,6 +57,10 @@ ash /mnt/HD/HD_a2/scripts/setup-python.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 #---------- FILE SETUP ----------
 echo "Setting up file (the command)..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/setup-file.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
+
+#---------- ENGINEER GUI SETUP ----------
+echo "Setting up the engineer GUI..." >> /mnt/HD/HD/a2/setup.log
+ash /mnt/HD/HD_a2/scripts/setup-enggui.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 
 #---------- SWAP SETUP ----------
 echo "Setting up swap file..." >> /mnt/HD/HD_a2/setup.log
