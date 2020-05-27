@@ -22,7 +22,8 @@ echo "Creating custom shutdown script..."
 echo "#!/bin/ash
 swapoff /mnt/HD/HD_a2/swapfile.img" > /usr/local/sbin/custom_shutdown.sh
 
-cp /usr/local/sbin/custom_shutdown.sh /usr/local/bin/custom_shutdown.sh
+echo "#!/bin/ash
+swapoff /mnt/HD/HD_a2/swapfile.img" > /usr/local/bin/custom_shutdown.sh
 
 chmod a+x /usr/local/sbin/custom_shutdown.sh
 chmod a+x /usr/local/bin/custom_shutdown.sh

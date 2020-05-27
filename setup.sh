@@ -35,9 +35,6 @@ ash /mnt/HD/HD_a2/scripts/setup-home.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 #---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
 . /home/admin/.profile
 
-#---------- MAKE MOST TOOLS AVAILABLE IN /usr/local/bin AS WELL ----------
-ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/bin/ /usr/local/bin
-
 #---------- SSH SETUP ----------
 echo "Setting up SSH..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/setup-ssh.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
