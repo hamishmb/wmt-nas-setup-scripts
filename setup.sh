@@ -68,4 +68,4 @@ ash /mnt/HD/HD_a2/scripts/setup-swap.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 
 #---------- CLEAN SHUTDOWN/REBOOT SCRIPT ----------
 echo "Setting up clean shutdown/reboot script..." >> /mnt/HD/HD_a2/setup.log
-ash /mnt/HD/HD_a2/scripts/setup-shutdown.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
+ash /mnt/HD/HD_a2/scripts/setup-poweroff.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
