@@ -27,7 +27,7 @@ echo "Creating .bashrc..."
 
 cat << "EOF" > /home/admin/.bashrc
 #Set up PATH and LD_LIBRARY_PATH
-export PATH="/mnt/HD/HD_a2/nas-sysroot/usr/local/bin:/mnt/HD/HD_a2/nas-sysroot/usr/local/sbin:$PATH"
+export PATH="/mnt/HD/HD_a2/nas-sysroot/usr/local/bin:/mnt/HD/HD_a2/nas-sysroot/usr/local/sbin:/usr/local/sbin:$PATH"
 export LD_LIBRARY_PATH="/mnt/HD/HD_a2/nas-sysroot/lib:/mnt/HD/HD_a2/nas-sysroot/usr/local/lib:$LD_LIBRARY_PATH"
 
 #Set up TMPDIR
