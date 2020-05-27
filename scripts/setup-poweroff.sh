@@ -16,16 +16,23 @@
 #---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
 . /home/admin/.profile
 
-#The script that starts this file can be a bit flaky - put it in two different places to make sure it works.
 echo "Creating custom shutdown script..."
 
 echo "#!/bin/ash
-swapoff /mnt/HD/HD_a2/swapfile.img" > /usr/local/sbin/custom_shutdown.sh
+swapoff /mnt/HD/HD_a2/swapfile.img
+/usr/local/modules/script/shutdown.sh" > /mnt/HD/HD_a2/shutdown.sh
+
+chmod a+x /mnt/HD/HD_a2/shutdown.sh
+ln -s /mnt/HD/HD_a2/shutdown.sh /home/admin/shutdown.sh
+
+echo "Creating custom reboot script..."
 
 echo "#!/bin/ash
-swapoff /mnt/HD/HD_a2/swapfile.img" > /usr/local/bin/custom_shutdown.sh
+swapoff /mnt/HD/HD_a2/swapfile.img
+sync; sync; sync;
+reboot" > /mnt/HD/HD_a2/reboot.sh
 
-chmod a+x /usr/local/sbin/custom_shutdown.sh
-chmod a+x /usr/local/bin/custom_shutdown.sh
+chmod a+x /mnt/HD/HD_a2/reboot.sh
+ln -s /mnt/HD/HD_a2/reboot.sh /home/admin/reboot.sh
 
 echo "Done!"
