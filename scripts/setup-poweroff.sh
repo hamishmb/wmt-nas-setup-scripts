@@ -20,9 +20,9 @@ echo "Creating custom shutdown script..."
 
 echo "#!/bin/ash
 swapoff /mnt/HD/HD_a2/swapfile.img
-echo 'When you are logged out, it is safe to remove the power'
+echo 'When you are logged out, wait two minutes and then remove the power'
 sync; sync; sync;
-/usr/local/modules/script/shutdown.sh" > /mnt/HD/HD_a2/shutdown.sh
+poweroff" > /mnt/HD/HD_a2/shutdown.sh
 
 chmod a+x /mnt/HD/HD_a2/shutdown.sh
 ln -s /mnt/HD/HD_a2/shutdown.sh /home/admin/shutdown.sh
