@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#Version: 1.0~pre2
+#Version: 1.0
 
 #NOTES:
 
@@ -35,7 +35,7 @@ ash /mnt/HD/HD_a2/scripts/setup-home.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 #---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
 . /home/admin/.profile
 
-mkdir /usr/local/bin
+ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/bin/ /usr/local/bin
 
 #---------- SSH SETUP ----------
 echo "Setting up SSH..." >> /mnt/HD/HD_a2/setup.log
