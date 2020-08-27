@@ -28,6 +28,10 @@ fi
 #Prepare script log file.
 echo "" > /mnt/HD/HD_a2/setup.log
 
+#---------- REMOUNT FOR BETTER RELIABILITY ----------
+echo "Remounting RAID array..." >> /mnt/HD/HD_a2/setup.log
+ash /mnt/HD/HD_a2/scripts/remount.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
+
 #---------- CREATING HOME DIRECTORY AND CONFIG ----------
 echo "Creating home directory and config..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/setup-home.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
