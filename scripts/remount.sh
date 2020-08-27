@@ -13,9 +13,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
-. /home/admin/.profile
-
 echo "Remounting"
 
 #Remount the RAID array with non-stupid options for better reliability.
