@@ -16,5 +16,13 @@
 #---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
 . /home/admin/.profile
 
+echo "Remounting"
+
 #Remount the RAID array with non-stupid options for better reliability.
 mount -t ext4 -o remount,rw,noatime,nodiratime,commit=5,barrier=1,usrquota,grpquota /dev/md1 /mnt/HD/HD_a2
+
+echo "Done, mount output:'\n"
+
+mount
+
+echo "'\n"
