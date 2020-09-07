@@ -45,6 +45,10 @@ ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/libexec/sftp-server /usr/local/libexec
 ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/libexec/ssh-keysign /usr/local/libexec/ssh-keysign
 ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/libexec/ssh-pkcs11-helper /usr/local/libexec/ssh-pkcs11-helper
 
+echo "Linking libcrypto.so.1.1 to /lib so scp works..."
+
+ln -s /mnt/HD/HD_a2/nas-sysroot/usr/local/lib/libcrypto.so.1.1 /lib/libcrypto.so.1.1
+
 echo "Starting SSH server..."
 
 /mnt/HD/HD_a2/nas-sysroot/usr/local/sbin/sshd -f /home/admin/.ssh/sshd_config 2>&1 > /mnt/HD/HD_a2/scripts/ssh.log
