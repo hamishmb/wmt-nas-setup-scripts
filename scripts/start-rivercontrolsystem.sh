@@ -19,5 +19,5 @@
 echo "Starting river control system..."
 
 cd /mnt/HD/HD_a2/rivercontrolsystem
-python3 ./main.py --id "NAS" &
+python3 ./main.py --id "NAS" > /dev/null 2> /dev/null &
 cd -
