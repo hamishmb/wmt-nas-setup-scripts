@@ -73,6 +73,10 @@ ash /mnt/HD/HD_a2/scripts/setup-swap.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 echo "Setting up clean shutdown/reboot script..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/setup-poweroff.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 
+#---------- SETUP AUTO BACKUPS ----------
+echo "Setting up automatic backups (cron)..." >> /mnt/HD/HD_a2/setup.log
+ash /mnt/HD/HD_a2/scripts/setup-autobackup.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
+
 #---------- START RIVER CONTROL SYSTEM ----------
 echo "Starting river control system..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/start-rivercontrolsystem.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
