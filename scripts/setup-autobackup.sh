@@ -16,4 +16,4 @@
 #---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
 . /home/admin/.profile
 
-echo (crontab -l ; echo "0 11 * * 0 /mnt/HD/HD_a2/backupandrestore/init_backup.sh") | crontab -
+echo "0 11 * * 0 /mnt/HD/HD_a2/backupandrestore/init_backup.sh" >> /var/spool/crontabs/root
