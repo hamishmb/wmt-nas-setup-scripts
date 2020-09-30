@@ -16,4 +16,4 @@
 #---------- MAKE CUSTOM BINARIES AVAILABLE IN THIS SCRIPT ----------
 . /home/admin/.profile
 
-echo "0 11 * * 0 /bin/ash /mnt/HD/HD_a2/backupandrestore/init_backup.sh" >> /var/spool/cron/crontabs/root
+echo "0 1 * * MON /bin/ash /mnt/HD/HD_a2/backupandrestore/init_backup.sh" >> /var/spool/cron/crontabs/root
