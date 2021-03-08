@@ -80,3 +80,8 @@ ash /mnt/HD/HD_a2/scripts/setup-autobackup.sh 2>&1 >> /mnt/HD/HD_a2/setup.log
 #---------- START RIVER CONTROL SYSTEM ----------
 echo "Starting river control system..." >> /mnt/HD/HD_a2/setup.log
 ash /mnt/HD/HD_a2/scripts/start-rivercontrolsystem.sh &
+
+/usr/bin/logger -t xyzzy "SHELL=$SHELL"
+/usr/bin/logger -t xyzzy "me=$(whoami)"
+echo "test" > /tmp/me.log
+/usr/bin/logger -t xyzzy "Status after file write: $?"
