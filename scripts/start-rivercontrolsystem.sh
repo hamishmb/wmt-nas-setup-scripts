@@ -19,5 +19,6 @@
 echo "Starting river control system..."
 
 cd /mnt/HD/HD_a2/rivercontrolsystem
-python3 ./main.py --id "NAS" 2>&1 | tee /usr/bin/logger -t rivercontrolsystem
+echo "test" 2>&1 | tee /usr/bin/logger -t rivercontrolsystem
+python3 -u ./main.py --id "NAS" 2>&1 | tee /usr/bin/logger -t rivercontrolsystem
 cd -
